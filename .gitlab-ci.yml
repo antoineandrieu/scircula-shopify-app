@@ -1,0 +1,8 @@
+include:
+  - template: AWS/Deploy-ECS.gitlab-ci.yml
+
+variables:
+  CI_AWS_ECS_CLUSTER: shopify-app
+  CI_AWS_ECS_SERVICE: ecs-shopify-app-production
+  CI_AWS_ECS_TASK_DEFINITION: shopify-app
+  REVIEW_DISABLED: 'true'
